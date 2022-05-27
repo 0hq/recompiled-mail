@@ -373,7 +373,7 @@ def check_payout_users():
                 wdb.update_one({'email': w["email"] },{'$push': {'strikes': now}}) 
 
 
-@sched.scheduled_job('cron', seconds=3)
+@sched.scheduled_job('interval', seconds=15)
 def timed_job():
     cron_job()
 
