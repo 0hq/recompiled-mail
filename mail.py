@@ -305,7 +305,7 @@ Have a nice day!
     now = datetime.now()
     c = wdb.find_one({ "email": sender })
     a = adb.find_one({ "admin": True })
-    if c["last_send_date"] > a["last_paid"] + timedelta(days=30):
+    if c["last_send_date"] > a["last_paid"]:
         send_email(sender, double_send)
     for x in c["subscribers"]:
         send_email(x["email"], sub_content) 
