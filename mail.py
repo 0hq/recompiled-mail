@@ -255,7 +255,7 @@ Have a nice day!
 
 def check_code(code, sender):
     print("check_code", code, sender)
-    c = wdb.find_one({ "email": sender, "secret_code": code })
+    c = wdb.find_one({ "email": sender, "secret_code": code, "accepted": True, "expired": False })
     # print(c, bool(c))
     return bool(c)
 
