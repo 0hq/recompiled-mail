@@ -180,9 +180,9 @@ def expire_invite(writer, inviter):
 Subject: Expired Invite
 
 I'm sorry to say the invitation to {writer} has expired.
-A refund is being sent now to {inviter} - if there's any issue here, be sure to reach out to support@recompiled.fyi.
+You were never charged, since they never accepted, at {inviter} - if there's any issue here, be sure to reach out to support@recompiled.fyi.
 
-Want to try again? You can issue another invite at recompiled.fyi.
+Want to try again? You can issue another invite at https://recompiled.fyi.
 
 Have a nice day!
 - Will DePue
@@ -192,7 +192,7 @@ Subject: Expired Invite
 
 I'm sorry to say your invitation from {inviter} has expired.
 
-Want to try again? Reach out to {inviter} and ask them to create a new invite - or you can sign up and start now on recompiled.fyi
+Want to try again? Reach out to {inviter} and ask them to create a new invite - or you can sign up and start now on https://recompiled.fyi.
 
 Have a nice day!
 - Will DePue
@@ -208,7 +208,7 @@ Subject: Alert of Missed Writing Period
 
 Alert:
 {writer} has missed this month's writing period. If they miss next month, this subscription will be permanently expired.
-If you want to cancel your subscription now, you can do so at recompiled.fyi.
+If you want to cancel your subscription now, you can do so at https://recompiled.fyi/login
 
 Have a nice day!
 - Will DePue
@@ -218,7 +218,7 @@ Subject: Alert of Missed Writing Period
 
 You've missed this month's writing period.
 If you miss next month, this subscription will be permanently expired.
-If you want to cancel your letter now, you can do so at recompiled.fyi.
+If you want to cancel your letter now, you can do so at https://recompiled.fyi/login.
 
 Have a nice day!
 - Will DePue
@@ -232,16 +232,16 @@ def expire_subscription(writer, subs):
 Subject: Your subscription has been removed.
 
 Alert:
-{writer} has missed their writing period two months in a row. This subscription has been permanently expired. You can always restart this subscription by creating a new invite and subscription at recompiled.fyi.
+{writer} has missed their writing period two months in a row. This subscription has been permanently expired. You can always restart this subscription by creating a new invite and subscription at https://recompiled.fyi/.
 
 Have a nice day!
 - Will DePue
     '''
     writer_content = f'''\
-Subject: Your subscription has been removed.
+Subject: Your newsletter has been removed.
 
 Alert:
-You've missed two monthly writing periods in a row. This subscription will be permanently expired. You can always restart this subscription by asking a subscriber to issue a new invite or by signing up again at recompiled.fyi.
+You've missed two monthly writing periods in a row. This newsletter will be permanently expired. You can always restart this newsletter by asking a subscriber to issue a new invite.
 
 Have a nice day!
 - Will DePue
@@ -266,9 +266,7 @@ Subject: Oops, that didn't work.
 
 We just got an email from you to dispatch at Recompiled but it didn't look right. Double check that you included your writer code (you can check on our website) or that you sent from the right email account. It should look like XXX12345678XXX where the middle numbers are your code (include it anywhere in the email, we'll find it).
 
-Remember, you can always check your writer code at https://recompiled.fyi/login
-
-If this wasn't you, reply to this email and we'll make sure your account is secure.
+Remember, you can always check your writer code and account status at https://recompiled.fyi/login
 
 Have a nice day!
 - Will DePue
