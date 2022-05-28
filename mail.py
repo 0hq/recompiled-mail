@@ -297,7 +297,7 @@ Have a nice day!
     double_send = f'''\
 Subject: You sent an extra letter this month!
 
-Did you mean to send that letter now? We're going to send that email to your readers now, but this session ends oYour email has been confirmed sent to your readers! We'll send payment over at the end of the month. :)
+Did you mean to send that letter now? We're going to send that email to your readers now, but this session ends on {(a["last_paid"] + timedelta(days=30)).strftime("%m/%d/%Y")}. Your email has been confirmed sent to your readers! We'll send payment over at the end of the month. :)
 
 Have a nice day!
 - Will DePue
