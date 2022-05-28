@@ -325,7 +325,7 @@ def payout_user_email(writer):
     confirmation = f'''\
 Subject: You just got paid!
 
-You've been paid for this month - keep up the good work :) Visit your Stripe account for more information via Stripe login.
+You've been paid for this month - keep up the good work :) Visit your Stripe account for more information via Stripe login. You can access your payments at https://connect.stripe.com/express_login
 
 Have a nice day!
 - Will DePue
