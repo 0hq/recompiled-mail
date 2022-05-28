@@ -277,6 +277,7 @@ Have a nice day!
 
 def dispatch_email(sender, subject, content):
     print("dispatch_email", sender, subject, content)
+    a = adb.find_one({ "admin": True })
     sub_content = f'''\
 Subject: {subject}
 
@@ -304,7 +305,6 @@ Have a nice day!
     '''    
     now = datetime.now()
     c = wdb.find_one({ "email": sender })
-    a = adb.find_one({ "admin": True })
     if c["last_send_date"] > a["last_paid"]:
         send_email(sender, double_send)
     for x in c["subscribers"]:
